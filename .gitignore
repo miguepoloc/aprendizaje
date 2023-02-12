@@ -1,6 +1,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/git,node,python,django,react,windows,linux,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,node,python,django,react,windows,linux,macos
 
+### VsCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+.vscode
+vscode/
+
 ### Django ###
 *.log
 *.pot
