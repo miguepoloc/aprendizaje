@@ -36,6 +36,18 @@ En algunos casos, si falla por versión de las librerías debe colocar
 npm install --legacy-peer-deps
 ```
 
+## Errores comunes con Docker
+
+### docker: invalid reference format. See 'docker run --help'.
+
+Hace referencia a que al usar el pwd con el comando docker run, no se encuentra el directorio. Para solucionar este error, debe ejecutar el siguiente comando de ejemplo
+
+```bash
+docker run --rm -p 3000:3000 -v ${pwd}/index.js:/usr/src/index.js platziapp
+```
+
+Teniendo en cuenta que la expresión `${pwd}` reemplazada el directorio donde se ejecuta el comando 
+
 ## Contacto
 
 miguelpoloac@unimagdalena.edu.co
